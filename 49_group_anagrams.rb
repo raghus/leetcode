@@ -1,4 +1,5 @@
-# Problem #49/Medium https://leetcode.com/problems/group-anagrams/
+# Problem 49 - Medium 
+# https://leetcode.com/problems/group-anagrams/
 
 # @param {String[]} strs
 # @return {String[][]}
