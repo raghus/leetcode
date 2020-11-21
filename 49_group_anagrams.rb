@@ -9,13 +9,15 @@ def group_anagrams(strs)
 
     strs.each do |word| # iterate through the given array of words
 
-        # arrange each word alphabetically ie sort it
+        # re-arrange each word alphabetically ie sort it
         sorted_word = word.split("").sort.join("") 
         
         # check if this sorted word is in our Hash/Dictionary
         if anagrams[sorted_word].nil?
             # if it isn't add it with 
             # the key as the sorted word and the value as the original word
+            # add it as an element of an array though as we will 
+            # append to the array in the else case below
             anagrams[sorted_word] = [word]
         else
             # if it in the hash, append the original word to the array
